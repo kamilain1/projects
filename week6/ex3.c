@@ -38,7 +38,7 @@ void WaitingTime(int n, int *BT, int *WT, int quantum) {
     }
 }
 
-void TurnaroundTime(int *AT, int n, int *BT, int *WT, int *TAT) {
+void TurnaroundTime(int n, int *BT, int *WT, int *TAT) {
     for (int i = 0; i < n; i++)
         TAT[i] = BT[i] + WT[i];
 }
@@ -47,7 +47,7 @@ void AvgTime(int *AT, int n, int *BT, int *CT, int quantum) {
     int wt[n], tat[n], WTsum = 0, TATsum = 0;
 
     WaitingTime(n, BT, wt, quantum);
-    TurnaroundTime(AT, n, BT, wt, tat);
+    TurnaroundTime(n, BT, wt, tat);
 
     printf("P: \tAT   \tBT   \tCT   \tTAT   \tWT\n");
 
@@ -62,7 +62,6 @@ void AvgTime(int *AT, int n, int *BT, int *CT, int quantum) {
 
 }
 
-// Driver code
 int main() {
     printf("Write the number of processes\n");
     int n;
