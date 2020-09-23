@@ -1,12 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void swap(int *x, int *y) {
-    int temp = *x;
-    *x = *y;
-    *y = temp;
-}
-
 void ProcessesSort(int **processes, int n) {
     for (int i = 0; i < n; i++)
         for (int j = i + 1; j < n; j++)
