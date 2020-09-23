@@ -14,8 +14,7 @@ void ProcessesSort(int **processes, int n) {
 void BSort(int **processes, int n) {
     for (int i = 0; i < n; i++)
         for (int j = i + 1; j < n; j++)
-            if (processes[i][1] > processes[j][1])
-               /*if (processes[i][0] >= processes[j][0])*/ {
+            if (processes[i][1] > processes[j][1]) {
                     int *temp = processes[i];
                     processes[i] = processes[j];
                     processes[j] = temp;
