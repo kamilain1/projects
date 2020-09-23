@@ -78,12 +78,13 @@ int main() {
         TAT = Turnaroundtime(CT, processes, i, &TATsum);
         WT = WaitingTime(TAT, processes, i, &WTsum, &BT);
     }
-    for (int i = 0; i < n; ++i) {
-        printf("P%d(%d, %d): \tCT = %d \v\tTAT = %d \v\tWT = %d\n", i, processes[i][0], processes[i][1],
+    printf("P: \tAT   \tBT   \tCT   \tTAT   \tWT\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d: \t%d   \t%d   \t%d   \t%d   \t%d\n", i + 1, processes[i][0], processes[i][1],
                processes[i][2], processes[i][3], processes[i][4]);
     }
-    printf("Average TAT = %f\n", TATsum / n);
-    printf("Average WT = %f\n", WTsum / n);
+    printf("Avg WT = %f\n", WTsum / n);
+    printf("Avg TAT = %f\n", TATsum / n);
 
     return 0;
 }
