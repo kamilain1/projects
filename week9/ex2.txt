@@ -1,0 +1,3 @@
+I have found that if all page references are equal, then hit/miss ratio is maximal. So, the less amount of different page references, the bigger the hit/miss ratio, and vice versa.
+
+So, for the maximal hit/miss ratio we just create an input with all equal page references and for minimal we create an input with all different.
