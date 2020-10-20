@@ -1,0 +1,2 @@
+/home/mobaxterm/week1/file.txt
+_ex2.txt

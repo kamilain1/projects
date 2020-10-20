@@ -1,0 +1,18 @@
+-rw-r--r--    1 kamil    UsersGrp         0 Oct 20 13:52 _ex3.txt
+-rw-r--r--    1 kamil    UsersGrp         0 Oct 20 13:52 _ex3.txt
+-rw-r--r--    1 kamil    UsersGrp         0 Oct 20 13:52 _ex3.txt
+
+660 means that
+owner: read, write
+group: read, write
+others: no permission
+
+775 means that
+owner: read, write, execute
+group: read, write, execute
+others: read, execute
+
+777 means that
+owner: read, write, execute
+group: read, write, execute
+others: read, write, execute
