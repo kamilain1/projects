@@ -2,9 +2,9 @@ The first output is Hello\nHello\n
 The second output is Hello\n\n\n
 
 First case:
-    After the first printf buffer will contain "Hello" and fork child process will inherit every part of the parent process, including the buffer. Therefore, after the second printf in both processes "Hello" will be printed twice.
+After the first printf buffer will contain "Hello" and fork child process will inherit every part of the parent process, including the buffer. Therefore, after the second printf in both processes "Hello" will be printed twice.
 
 Second case:
-    After the first printf buffer will be empty, and "Hello\n" will be printed
-    The child process will inherit empty buffer, therefore after the second printf "\n" will be printed in parent and child processes.
+After the first printf buffer will be empty, and "Hello\n" will be printed.
+The child process will inherit empty buffer, therefore after the second printf "\n" will be printed in parent and child processes.
 
