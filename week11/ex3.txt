@@ -1,0 +1,3 @@
+The first output is Hello \n Hello
+The second output is Hello
+This happens because in the second case fork() reads the empty line and therefore it will write the same empty line
