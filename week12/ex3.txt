@@ -1,0 +1,49 @@
+-DBUF_SIZE=2
+File size = 1mb
+
+real    0m2.876s
+user    0m0.436s
+sys     0m2.437s
+
+-DBUF_SIZE=2
+-D_SYNC=1
+File size = 1mb
+
+real    0m2.949s
+user    0m0.437s
+sys     0m2.468s
+
+-DBUF_SIZE=128
+File size = 1mb
+
+real    0m0.102s
+user    0m0.015s
+sys     0m0.077s
+
+
+-DBUF_SIZE=2
+File size = 30mb
+
+real    1m27.489s
+user    0m16.250s
+sys     1m11.109s
+
+-DBUF_SIZE=2
+-D_SYNC=1
+File size = 30mb
+
+real    1m29.288s
+user    0m16.671s
+sys     1m12.547s
+
+-DBUF_SIZE=128
+File size = 30mb
+
+real    0m1.574s
+user    0m0.234s
+sys     0m1.342s
+
+From this I can conclude that:
+1) Bigger buffer size -> faster program speed 
+2) Bigger file size -> slower program speed
+3) D_SYNC is on -> slower program speed
