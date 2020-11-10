@@ -1,0 +1,5 @@
+It is crucial to prevent a deadlock before it can occur. Usually deadlock prevention algorithm checks that at least one of the conditions (mutual exclusion, hold and wait, no preemption and circular wait) will not happen. But the majority of prevention algorithms have bad resource utilization, and therefore lead to reduced throughput.
+
+Instead of using low effective prevention algorithms, it is possible to avoid deadlocks by using information about the usage of resources by processes. Usually algorithm needs every process to tell in advance the maximum number of resources of each type that it may need, and uses this information to decide if a process should wait for a resource or not.
+
+If deadlock prevention and avoidance are not done properly, a deadlock may occur and only thing left to do is to recover from the deadlock. It may be done by many ways, for example aborting some processes to break the circular waiting.
